@@ -15,10 +15,10 @@ body {
   opacity: 0.8;
 }
 
-.pressed {
+/* .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
-}
+} */
 footer{
   color: #FEF2BF;
   font-size: 1rem;
