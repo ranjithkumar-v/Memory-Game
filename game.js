@@ -26,12 +26,6 @@ window.onload = function() {
   showInstruction();
 };
 
-// Call hideInstruction() at the point where the game actually starts
-// For example, if your game starts with a function called startGame, do:
-function startGame() {
-  hideInstruction();
-}
-
 var gamePattern = [];
 var userClickedPattern = [];
 
