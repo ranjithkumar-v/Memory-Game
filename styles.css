@@ -74,8 +74,6 @@ footer{
  */
 
 /* New style  */
-
-
 .simon-board {
   position: relative;
   width: 420px;
@@ -121,12 +119,5 @@ footer{
 .blue {
   background: #094a8f;
   border-bottom-right-radius: 100% 100%;
-}
-
-
-/* pressed effect */
-.pressed {
-  filter: brightness(1.3);
-  box-shadow: 0 0 20px white;
 }
 
