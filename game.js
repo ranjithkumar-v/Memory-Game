@@ -1,7 +1,7 @@
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 
-const instructionText = "Follow the pattern of Lights and sounds for as long as you can.";
+const instructionText = "Repeat the pattern of lights and sounds – how far can your memory take you?";
 
 // Function to show instruction before the game starts
 function showInstruction() {
