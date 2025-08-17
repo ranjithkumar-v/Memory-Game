@@ -10,41 +10,9 @@ body {
   color: #FEF2BF;
 }
 
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
-
-}
-
-.btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
-}
-
 .game-over {
   background-color: red;
   opacity: 0.8;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
 }
 
 .pressed {
@@ -70,3 +38,88 @@ footer{
   margin: 1.5%;
   color: #FEF2BF; 
 }
+/* odd Style  */
+/* .container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+ */
+
+/* New style  */
+
+
+.simon-board {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  margin: auto;
+  border-radius: 50%;
+  background: #333; /* dark center border */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+.btn {
+  border-radius: 50% 50% 0 0; /* will override for each quadrant */
+  border: none;
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn:active, .pressed {
+  transform: scale(0.95);
+  filter: brightness(1.2);
+}
+
+/* Quadrant shapes */
+.green {
+  background: #00a74a;
+  border-top-left-radius: 100% 100%;
+}
+.red {
+  background: #9f0f17;
+  border-top-right-radius: 100% 100%;
+}
+.yellow {
+  background: #cca707;
+  border-bottom-left-radius: 100% 100%;
+}
+.blue {
+  background: #094a8f;
+  border-bottom-right-radius: 100% 100%;
+}
+
