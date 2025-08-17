@@ -1,6 +1,37 @@
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 
+const instructionText = "Follow the pattern of Lights and sounds for as long as you can.";
+
+// Function to show instruction before the game starts
+function showInstruction() {
+  // Assume there's an element with id="instruction" to display the message
+  const instructionDiv = document.getElementById('instruction');
+  if (instructionDiv) {
+    instructionDiv.textContent = instructionText;
+    instructionDiv.style.display = 'block';
+  }
+}
+
+// Function to hide instruction when game starts
+function hideInstruction() {
+  const instructionDiv = document.getElementById('instruction');
+  if (instructionDiv) {
+    instructionDiv.style.display = 'none';
+  }
+}
+
+// Call showInstruction() when the page loads or before game starts
+// window.onload = function() {
+//   showInstruction();
+// };
+
+// Call hideInstruction() at the point where the game actually starts
+// For example, if your game starts with a function called startGame, do:
+function startGame() {
+  hideInstruction();
+}
+
 var gamePattern = [];
 var userClickedPattern = [];
 
@@ -9,6 +40,7 @@ var level = 0;
 
 $(document).keypress(function() {
   if (!started) {
+  hideInstruction();
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
@@ -73,6 +105,7 @@ function playSound(name) {
 }
 
 function startOver() {
+  showInstruction();
   level = 0;
   gamePattern = [];
   started = false;
