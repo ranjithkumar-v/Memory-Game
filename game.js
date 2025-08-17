@@ -22,9 +22,9 @@ function hideInstruction() {
 }
 
 // Call showInstruction() when the page loads or before game starts
-// window.onload = function() {
-//   showInstruction();
-// };
+window.onload = function() {
+  showInstruction();
+};
 
 // Call hideInstruction() at the point where the game actually starts
 // For example, if your game starts with a function called startGame, do:
@@ -105,7 +105,6 @@ function playSound(name) {
 }
 
 function startOver() {
-  showInstruction();
   level = 0;
   gamePattern = [];
   started = false;
