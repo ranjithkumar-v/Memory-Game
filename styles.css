@@ -63,3 +63,10 @@ footer{
   margin: 1.5%;
   color: #FEF2BF;
 }
+#instruction
+{
+ font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  margin: 1.5%;
+  color: #FEF2BF; 
+}
